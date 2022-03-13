@@ -1,7 +1,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-my first microservice project along with amazing tutorial
+my first microservices project along with amazing tutorial.
+we have two folders admin and main the admin app Built with django that will let us create update delete products.
+and main app Built with flask to let us browse products and like them.
+the two app communicate through rabbitmq.
 
 
 
