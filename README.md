@@ -12,6 +12,8 @@ the two app communicate through rabbitmq.
 
 * [Django](https://www.djangoproject.com/)
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+* [MySQL](https://www.mysql.com/)
+* [SQLAlchemy](https://www.sqlalchemy.org/)
 * [Docker](https://www.docker.com/)
 * [RabbitMQ](https://www.rabbitmq.com/)
 
@@ -28,4 +30,30 @@ the two app communicate through rabbitmq.
 2. for each file of the project --admin & main
   ```sh
   docker-compose up
+  ```
+  
+  3. admin app migration inside docker container
+  ```sh
+  docker-compose exec backend sh
+  ```
+    ```sh
+  python manage.py makemigration
+  ```
+      ```sh
+  python manage.py migrate
+  ```
+
+  
+  4. main app migration inside docker container
+  ```sh
+  docker-compose exec backend sh
+  ```
+    ```sh
+  python manage.py db init
+  ```
+      ```sh
+  python manage.py db migrate
+  ```
+        ```sh
+  python manage.py db upgrade
   ```
