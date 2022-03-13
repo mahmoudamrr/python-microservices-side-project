@@ -36,10 +36,10 @@ the two app communicate through rabbitmq.
   ```sh
   docker-compose exec backend sh
   ```
-    ```sh
+  ```sh
   python manage.py makemigration
   ```
-      ```sh
+  ```sh
   python manage.py migrate
   ```
 
@@ -48,12 +48,12 @@ the two app communicate through rabbitmq.
   ```sh
   docker-compose exec backend sh
   ```
-    ```sh
+  ```sh
   python manage.py db init
   ```
-      ```sh
+  ```sh
   python manage.py db migrate
   ```
-        ```sh
+  ```sh
   python manage.py db upgrade
   ```
